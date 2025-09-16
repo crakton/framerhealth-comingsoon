@@ -22,6 +22,15 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+        },
+        healthcare: {
+          teal: "hsl(var(--healthcare-teal))",
+          "teal-light": "hsl(var(--healthcare-teal-light))",
+          text: "hsl(var(--healthcare-text))",
+          "text-light": "hsl(var(--healthcare-text-light))",
+          bg: "hsl(var(--healthcare-bg))",
+          border: "hsl(var(--healthcare-border))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

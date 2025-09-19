@@ -24,8 +24,9 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
           hover: "hsl(var(--primary-hover))",
         },
+        "lightframer": "#F6F8F9",
         healthcare: {
-          teal: "hsl(var(--healthcare-teal))",
+          teal: "#507991",
           "teal-light": "hsl(var(--healthcare-teal-light))",
           text: "hsl(var(--healthcare-text))",
           "text-light": "hsl(var(--healthcare-text-light))",

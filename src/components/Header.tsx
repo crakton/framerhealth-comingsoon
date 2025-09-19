@@ -17,28 +17,29 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white border-b border-healthcare-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="w-full bg-white">
+      <div className="p-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-healthcare-teal rounded flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-healthcare-teal rounded flex items-center justify-center">
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 2L10 8L16 8L16 10L10 10L10 16L8 16L8 10L2 10L2 8L8 8L8 2L10 2Z"/>
               </svg>
             </div>
             <span className="text-xl font-bold text-healthcare-text">
               Framer<span className="text-healthcare-teal">Health</span>
-            </span>
+            </span> */}
+            <img className="w-18" src="/logo.svg" alt="FramerHealth Logo" />
           </Link>
 
           {/* Navigation - Desktop */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 text-lg">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-healthcare-teal ${
+                className={`text-md font-semibold transition-colors hover:text-healthcare-teal ${
                   location.pathname === item.href
                     ? "text-healthcare-teal"
                     : "text-healthcare-text"

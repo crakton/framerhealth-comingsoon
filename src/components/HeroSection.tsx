@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { MailIcon} from 'lucide-react'
+import { Loader2, MailIcon} from 'lucide-react'
 import { FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
@@ -122,7 +122,7 @@ const HeroSection = () => {
             className="bg-healthcare-teal text-white text-xl text-bold py-2 px-4 rounded-full"
             disabled={loading}
           >
-            {loading ? "Subscribing..." : "Subscribe"}
+            {loading ? (<Loader2 size={24}/>) : "Subscribe"}
           </button>
         </form>
 

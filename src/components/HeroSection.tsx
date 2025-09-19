@@ -122,7 +122,7 @@ const HeroSection = () => {
             className="bg-healthcare-teal text-white text-xl text-bold py-2 px-4 rounded-full"
             disabled={loading}
           >
-            {loading ? (<Loader2 size={24}/>) : "Subscribe"}
+            {loading ? (<Loader2 className="animate-spin " size={24}/>) : "Subscribe"}
           </button>
         </form>
 

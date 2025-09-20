@@ -73,14 +73,14 @@ const HeroSection = () => {
         </div>
  
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-7xl space-y-4 gap-4 font-bold text-healthcare-text mb-6 leading-10 tracking-wide">
+        <h1 className="font-sans text-4xl md:text-7xl space-y-4 gap-4 font-bold text-healthcare-text mb-6 leading-loose md:leading-[5.8rem] tracking-wide">
           Premium Allied{" "}
           <span className="text-healthcare-teal">Healthcare</span>,<br />
           Thoughtfully Integrated
         </h1>
 
         {/* Description */}
-        <p className="text-lg md:text-3xl text-healthcare-text max-w-6xl mx-auto leading-10 tracking-wide">
+        <p className="font-sans text-lg md:text-3xl text-healthcare-text max-w-6xl mx-auto leading-relaxed md:leading-[2.8rem] tracking-wide">
           Join our platform to access comprehensive allied health services designed to 
           modern healthcare delivery. Be the first to experience our revolutionary 
           approach to integrated care.
@@ -105,15 +105,15 @@ const HeroSection = () => {
         </div>
 
         {/* Email Subscription */}
-        <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-8">
-          <div className="flex-1 p-3 flex items-center border border-healthcare-text-light rounded-full overflow-hidden focus-visible:ring-healthcare-teal">
+        <form onSubmit={handleSubscribe} className="flex flex-row gap-4 max-w-full mx-auto mb-8">
+          <div className="flex-1 p-3 w-full flex items-center border-2 border-healthcare-text-light rounded-full overflow-hidden focus-visible:ring-healthcare-teal">
             <MailIcon className="w-6 h-6 text-healthcare-text-light" />
             <Input
               type="email"
               placeholder="Enter your email address"
               value={email.id}
               onChange={(e) => setEmail((prev) => ({ ...prev, id: e.target.value }))}
-              className="flex-1 border-none bg-transparent focus-visible:ring-none focus-visible:ring-offset-[none]"
+              className="flex-1 w-fu border-none bg-transparent focus-visible:ring-none focus-visible:ring-offset-[none]"
               required
               disabled={loading}
             />
@@ -122,7 +122,7 @@ const HeroSection = () => {
             className="bg-healthcare-teal text-white text-xl text-bold py-2 px-4 rounded-full"
             disabled={loading}
           >
-            {loading ? (<Loader2 className="animate-spin " size={24}/>) : "Subscribe"}
+            {loading ? (<Loader2 className="animate-spin" size={24}/>) : "Subscribe"}
           </button>
         </form>
 

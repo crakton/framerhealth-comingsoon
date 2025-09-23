@@ -74,22 +74,21 @@ const HeroSection = () => {
 
         <div className="w-full md:w-9/12 mx-auto">
           {/* Main Heading */}
-          <h1 className="mx-auto font-montserrat text-2xl md:text-7xl font-bold text-healthcare-text mb-6 leading-tight md:leading-[5.8rem] tracking-wide">
-            Premium Allied <span className="text-healthcare-teal">Healthcare</span>,<br className="hidden md:inline" />
-            <span className="block md:inline">Thoughtfully Integrated</span>
+          <h1 className="mx-auto text-black font-montserrat-semibold text-2xl md:text-7xl text-healthcare-text mb-6 leading-tight md:leading-[5.8rem] tracking-wide">
+            Premium Allied <span className="text-healthcare-teal font-montserrat-semibold">Healthcare</span>,<br className="hidden md:inline" />
+            <span className="block md:inline font-montserrat-semibold">Thoughtfully Integrated</span>
           </h1>
 
           {/* Description */}
-          <p className="font-montserrat text-md md:text-3xl text-healthcare-text mx-auto leading-relaxed md:leading-[2.8rem] tracking-wide md:px-4">
+          <p className="text-black font-montserrat text-md md:text-3xl text-healthcare-text mx-auto leading-relaxed md:leading-[2.8rem] tracking-wide md:px-4">
             Join our platform to access comprehensive allied health services designed to
             modern healthcare delivery. Be the first to experience our revolutionary
             approach to integrated care.
           </p>
-
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-row bg-white rounded-full p-3 gap-2 mb-6 shadow-md">
+        <div className="text-black flex flex-row bg-white rounded-full p-3 gap-2 mb-6 shadow-md">
           {["I am a Clinician", "I am a Patient"].map((label) => (
             <button
               key={label}
@@ -106,7 +105,7 @@ const HeroSection = () => {
         </div>
 
         {/* Email Subscription */}
-        <form onSubmit={handleSubscribe} className="flex flex-col md:flex-row justify-center gap-4 w-full mx-auto mb-8">
+        <form onSubmit={handleSubscribe} className="text-black flex flex-col md:flex-row justify-center gap-4 w-full mx-auto mb-8">
           <div className="p-4 w-full md:w-3/12 flex items-center border border-healthcare-text-light rounded-full overflow-hidden focus-within:border-2 min-w-0 gap-3">
             <MailIcon className="w-6 h-6 text-healthcare-text-light" />
             <input

@@ -17,9 +17,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white">
+    <header className="text-black w-full bg-white">
       <div className="p-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="font-montserrat flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             {/* <div className="w-8 h-8 bg-healthcare-teal rounded flex items-center justify-center">
@@ -63,7 +63,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-healthcare-border">
+          <div className="font-montserratmd:hidden border-t border-healthcare-border">
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <Link

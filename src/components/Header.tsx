@@ -34,7 +34,7 @@ const Header = () => {
           </Link>
 
           {/* Navigation - Desktop */}
-          <nav className="hidden md:flex items-center space-x-8 text-lg">
+          <nav className="font-sans hidden md:flex items-center space-x-8 text-lg">
             {navItems.map((item) => (
               <Link
                 key={item.name}

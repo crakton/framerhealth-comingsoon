@@ -1,15 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 /* Framer Health Design System - Healthcare Platform */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 215 25% 27%;
+    --font-montserrat: 'Montserrat', sans-serif;
 
     --card: 0 0% 100%;
     --card-foreground: 215 25% 27%;
@@ -115,11 +113,21 @@
 }
 
 @layer base {
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype'),
+       url('../public/fonts/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
+    font-family: 'Montserrat', sans-serif;
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }

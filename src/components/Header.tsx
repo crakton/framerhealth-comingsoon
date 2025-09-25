@@ -15,7 +15,7 @@ const Header = () => {
     { name: "Blogs", href: "#" },
     { name: "Contact", href: "/contact" },
   ];
-
+  
   return (
     <header className="text-black w-full bg-white">
       <div className="p-4 sm:px-6 lg:px-8">

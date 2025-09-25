@@ -65,7 +65,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="t-10 mx-6 bg-lightframer p-8 md:rounded-[50px] flex items-center justify-center">
+    <div className="t-10 w-11/12 mx-auto bg-lightframer p-8 rounded-3xl">
       <div className="mx-auto text-center flex flex-col items-center gap-6 w-full">
         {/* Coming Soon Badge */}
         <div className="inline-flex items-center p-4">
@@ -93,7 +93,7 @@ const HeroSection = () => {
             <button
               key={label}
               type="button"
-              className={`px-6 py-2 rounded-full tracking-wider text-xs md:text-lg md:text-balance font-medium transition-colors ${email.label === label
+              className={`px-6 font-montserrat-semibold py-2 rounded-full tracking-wider text-xs md:text-lg md:text-balance font-medium transition-colors ${email.label === label
                   ? "bg-healthcare-teal text-white"
                   : "bg-transparent text-healthcare-text"
                 }`}
@@ -105,24 +105,28 @@ const HeroSection = () => {
         </div>
 
         {/* Email Subscription */}
-        <form onSubmit={handleSubscribe} className="text-black flex flex-col md:flex-row justify-center gap-4 w-full mx-auto mb-8">
-          <div className="p-4 w-full md:w-3/12 flex items-center border border-healthcare-text-light rounded-full overflow-hidden focus-within:border-2 min-w-0 gap-3">
-            <MailIcon className="w-6 h-6 text-healthcare-text-light" />
+        <form
+          onSubmit={handleSubscribe}
+          className="text-black flex flex-col md:flex-row justify-center items-center gap-4 w-full mx-auto mb-8"
+        >
+          <div className="flex items-center border border-healthcare-text-light rounded-full overflow-hidden focus-within:border-2 min-w-0 gap-3 w-full md:w-7/12 lg:w-4/12">
+            <MailIcon className="w-5 h-5 md:w-6 md:h-6 text-healthcare-text-light ml-3" />
             <input
               type="email"
               placeholder="Enter your email address"
               value={email.id}
               onChange={(e) => setEmail((prev) => ({ ...prev, id: e.target.value }))}
-              className="flex-1 border-none bg-transparent placeholder:text-healthcare-text-light font-medium tracking-wider text-sm md:text-xl focus-visible:outline-none focus-visible:outline-0 min-w-0"
+              className="flex-1 border-none bg-transparent placeholder:text-healthcare-text-light font-montserrat-semibold tracking-wider text-sm md:text-base lg:text-lg placeholder:text-xs md:placeholder:text-base lg:placeholder:text-lg focus-visible:outline-none min-w-0 py-3 md:py-4 px-2"
               required
               disabled={loading}
             />
           </div>
           <button
-            className="bg-healthcare-teal text-white text-md md:text-xl font-semibold py-3 md:py-2 px-4 rounded-full"
+            className="bg-healthcare-teal text-white font-montserrat-semibold py-3 md:py-4 px-6 md:px-8 rounded-full w-full md:w-auto text-base md:text-lg lg:text-xl flex justify-center items-center"
             disabled={loading}
+            type="submit"
           >
-            {loading ? (<Loader2 className="animate-spin" size={24} />) : "Subscribe"}
+            {loading ? <Loader2 className="animate-spin" size={24} /> : "Subscribe"}
           </button>
         </form>
 

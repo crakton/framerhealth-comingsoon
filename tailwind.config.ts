@@ -18,6 +18,7 @@ export default {
         montserrat: ['var(--font-montserrat)', "ui-sans-serif", "system-ui"],
         "montserrat-bold": ['var(--font-montserrat-bold)', "ui-sans-serif", "system-ui"],
         "montserrat-semibold": ['var(--font-montserrat-semibold)', "ui-sans-serif", "system-ui"],
+        "montserrat-medium": ['var(--font-montserrat-medium)', "ui-sans-serif", "system-ui"],
       },
       colors: {
         border: "hsl(var(--border))",

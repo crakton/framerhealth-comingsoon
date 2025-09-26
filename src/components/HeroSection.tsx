@@ -65,22 +65,22 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="t-10 w-11/12 mx-auto bg-lightframer p-8 rounded-3xl">
-      <div className="mx-auto text-center flex flex-col items-center gap-6 w-full">
+    <div className="t-10 px-6 md:p-8">
+      <div className="py-16 px-4 md:px-10 flex flex-col items-center gap-4 w-full bg-lightframer rounded-3xl ">
         {/* Coming Soon Badge */}
-        <div className="inline-flex items-center p-4">
+        <div className="inline-flex items-center p-4 mb-3">
           <img src="/comingsoon.svg" alt="Coming Soon" />
         </div>
 
-        <div className="w-full md:w-9/12 mx-auto">
+        <div className="flex flex-col justify-center items-center w-full md:w-9/12 mx-auto">
           {/* Main Heading */}
-          <h1 className="mx-auto text-black font-montserrat-semibold text-2xl md:text-7xl text-healthcare-text mb-6 leading-tight md:leading-[5.8rem] tracking-wide">
+          <h1 className="mx-auto text-black font-montserrat-semibold text-center text-2xl md:text-5xl text-healthcare-text mb-6 leading-tight md:leading-[3.8rem] tracking-wide">
             Premium Allied <span className="text-healthcare-teal font-montserrat-semibold">Healthcare</span>,<br className="hidden md:inline" />
             <span className="block md:inline font-montserrat-semibold">Thoughtfully Integrated</span>
           </h1>
 
           {/* Description */}
-          <p className="text-black font-montserrat text-md md:text-3xl text-healthcare-text mx-auto leading-relaxed md:leading-[2.8rem] tracking-wide md:px-4">
+          <p className="text-black font-montserrat text-md md:text-2xl text-center text-healthcare-text mx-auto leading-relaxed md:leading-[2.8rem] tracking-wide md:px-4">
             Join our platform to access comprehensive allied health services designed to
             modern healthcare delivery. Be the first to experience our revolutionary
             approach to integrated care.
@@ -107,7 +107,7 @@ const HeroSection = () => {
         {/* Email Subscription */}
         <form
           onSubmit={handleSubscribe}
-          className="text-black flex flex-col md:flex-row justify-center items-center gap-4 w-full mx-auto mb-8"
+          className="text-black flex flex-col md:flex-row justify-center items-center gap-3 w-full mx-auto mb-8"
         >
           <div className="flex items-center border border-healthcare-text-light rounded-full overflow-hidden focus-within:border-2 min-w-0 gap-3 w-full md:w-7/12 lg:w-4/12">
             <MailIcon className="w-5 h-5 md:w-6 md:h-6 text-healthcare-text-light ml-3" />

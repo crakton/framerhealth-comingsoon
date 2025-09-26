@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="text-black w-full bg-white">
       <div className="p-4 sm:px-6 lg:px-8">
-        <div className="font-montserrat flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             {/* <div className="w-8 h-8 bg-healthcare-teal rounded flex items-center justify-center">
@@ -70,9 +70,9 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-healthcare-teal ${
+                  className={`block px-3 py-2 text-sm font-medium font-montserrat-medium transition-colors hover:text-healthcare-teal ${
                     location.pathname === item.href
-                      ? "text-healthcare-teal"
+                      ? "text-healthcare-teal font-bold font-montserrat-bold"
                       : "text-healthcare-text"
                   }`}
                 >
